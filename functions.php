@@ -98,6 +98,15 @@ function lorainccc_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+ 	register_sidebar( array(
+		'name'          => esc_html__( 'Homepage Slider', 'lorainccc' ),
+		'id'            => 'homepage-slider-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'lorainccc' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 		register_sidebar( array(
 		'name'          => esc_html__( 'Gateway Menu Sidebar', 'lorainccc' ),
 		'id'            => 'gateway-menu-sidebar',
@@ -170,8 +179,8 @@ add_action( 'widgets_init', 'lorainccc_widgets_init' );
  */
 function add_google_fonts() {
 wp_enqueue_style( 'open-sans-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', false );
-wp_enqueue_style( 'raleway-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', false ); 	
-	
+wp_enqueue_style( 'raleway-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', false );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
