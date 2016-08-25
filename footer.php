@@ -53,7 +53,7 @@
     </div>
     <div class="large-3 medium-3 columns">
       <h2>Quick Links</h2>
-	<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
+	<?php if ( has_nav_menu( 'footer-quicklinks-nav' ) ) : ?>
 		<nav id="site-navigation" class="footer-navigation" role="navigation">
 			<?php
 				// Primary Footer navigation menu.
