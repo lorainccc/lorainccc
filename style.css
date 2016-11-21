@@ -77,7 +77,7 @@ a img.alignleft{float:left;margin:5px 20px 20px 0}a img.aligncenter{display:bloc
 .orbit-slide p{font-size:.75rem}.cta-icons{width:100%;background-color:#0055a5;border-width:5px 0;border-style:solid;border-color:#ffc600}
 .cta-icons .icon-label{font-weight:500;color:#fefefe;font-size:1.125rem;margin-top:1rem}
 .cta-icons .row{background-image:url(/wp-content/themes/lorainccc/images/logo_xl_lccc_blue.png);background-position:center center;background-repeat:no-repeat;background-attachment:scroll;background-size:cover;padding:15px 0}
-.cta-icons .row .columns{padding:1.75rem 0}.yellow-icon{width:100px;height:100px;border-radius:50%;background-color:#ffc600;transition:background-color .25s ease-out,color .25s ease-out;position:relative}
+.cta-icons .row .columns{padding:1.75rem 0}.yellow-icon{width:100px;height:100px;border-radius:50%;background-color:#ffc600;-webkit-transition:background-color .25s ease-out,color .25s ease-out;transition:background-color .25s ease-out,color .25s ease-out;position:relative}
 .yellow-icon img{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto}.yellow-icon:hover{background-color:smart-scale(#ffc600,10%,25%)}
 .service-box{margin-top:3rem}.service-box-header h2{font-weight:700;color:#fefefe;font-size:.7475rem;background:#0c3b78;line-height:170%;padding:1rem 0;margin-bottom:0;margin-top:0;letter-spacing:.055rem;min-height:72px}
 .service-box-header h2 span{display:block;font-size:1.5625rem;color:#ffc600;text-transform:capitalize}
@@ -137,7 +137,7 @@ img.alignleft{float:left;margin:0 1em 1em 0}img.aligncenter{display:block;margin
 Section 4: Header
 */input[name=search],input[name=search]:focus{max-width:260px;width:100%;height:2rem;margin:.5rem 0 0 0;border-radius:20px;padding:.25rem .25rem .25rem 2.2rem;font-size:.75rem;font-weight:700;background-image:url(/wp-content/themes/lorainccc/images/icons/icon-search.png);background-repeat:no-repeat;background-position:.75rem .45rem}
 div.searchbox table thead,table tbody,table tfoot{border:0}a.skip-link.screen-reader-text{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
-a.skip-link.screen-reader-text:focus{position:static;width:auto;height:auto}ul{margin:2.5rem}
+a.skip-link.screen-reader-text:focus{position:static;width:auto;height:auto}ul{margin:2.5rem}div.gsc-clear-button{display: none;}
 /*!
 Section 5: Navigation
 */header nav a,header nav a:hover{color:#fefefe;font-size:.875rem;font-weight:600}
