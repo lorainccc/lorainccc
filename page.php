@@ -36,12 +36,13 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 		<?php endif; ?>
-	</div>
+
 	<div class="small-12 medium-12 large-12 columns">
 				<?php if ( is_active_sidebar( 'lccc-events-sidebar' ) ) { ?>
 							<?php dynamic_sidebar( 'lccc-events-sidebar' ); ?>
 				<?php } ?>
 	</div>
+			</div>
 	</div>			
 	<div class="small-12 medium-8 large-8 columns">		
 	<div id="primary" class="content-area">
