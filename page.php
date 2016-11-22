@@ -17,10 +17,11 @@ get_header(); ?>
 </div>
 <div class="medium-4 large-4 columns hide-for-small-only">
 	<div class="small-12 medium-12 large-12 columns sidebar-widget">
-		<div class="small-12 medium-12 large-12 columns sidebar-menu-header">
+
+	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
+			<div class="small-12 medium-12 large-12 columns sidebar-menu-header">
 		<h3>SIDEBAR MENU</h3>
 		</div>
-	<?php	if ( has_nav_menu( 'left-nav' ) ) : ?>
 	<div id="secondary" class="secondary">
 		<?php if ( has_nav_menu( 'left-nav' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
