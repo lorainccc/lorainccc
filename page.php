@@ -33,11 +33,10 @@ get_header(); ?>
 				?>
 			</nav><!-- .main-navigation -->
 				<?php endif; ?>
+			</div>
 		<?php endif; ?>
-		
 	</div>
-	</div>
-	<div class="small-12 medium-4 large-4 columns">
+	<div class="small-12 medium-12 large-12 columns">
 				<?php if ( is_active_sidebar( 'lccc-events-sidebar' ) ) { ?>
 							<?php dynamic_sidebar( 'lccc-events-sidebar' ); ?>
 				<?php } ?>
