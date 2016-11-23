@@ -126,6 +126,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .callout{margin-top:1rem;margin-bottom:2rem}.callout span{display:block}.callout h2{font-weight:600;font-size:1.25rem}
 .callout .name,.callout .hours-label{font-weight:700}.callout .callout-contact-method{margin-top:1.35rem}
 .callout .map-link{margin-top:4.45rem}ul{margin:2.5rem}blockquote{border:0}.academic-calender-content table tbody th,.academic-calender-content table tbody td{border:1px solid #ccc}
+.error-content input[name=search], input[name=search]:focus{max-width: 100%;}
 /*!
 Section 3: Body
 */body{font-size:.8625rem;font-family:"Open Sans",sans-serif;font-weight:500;line-height:1.5;color:#606060;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
