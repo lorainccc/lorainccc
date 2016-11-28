@@ -130,7 +130,7 @@ hr{border:0;height:20px;width:90%;height:50px;padding:2rem 0;box-shadow:0 15px 1
 .callout .name,.callout .hours-label{font-weight:700}.callout .callout-contact-method{margin-top:1.35rem}
 .callout .map-link{margin-top:4.45rem}ul{margin:2.5rem}blockquote{border:0}.academic-calender-content table tbody th,.academic-calender-content table tbody td{border:1px solid #ccc}
 .error-content input[name=search],input[name=search]:focus{max-width:100%}ul{margin-top:0 !important}
-@media screen and (min-width:40em){.service-box-copy{padding-left:0}.service-box-image{padding-right:0}
+@media screen and (min-width:40em){.service-box-copy{padding-left:0}.service-box-image{padding-right:0;padding-left:0}
 .service-box .button{position:absolute;bottom:1rem;left:63.5px}.service-box-container{height:100%}
 aside.columns{padding-right:0;padding-left:0}.gateway-main,.home-left{padding-right:5rem}
 .main-right{padding-left:5rem}header{padding-top:1.5rem}.mobile-app-link img,.mobile-app-link h2{float:left}
