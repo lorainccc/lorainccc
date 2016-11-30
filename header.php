@@ -46,16 +46,16 @@
         </label>
       </form>-->
      <div class="large-9 medium-6 columns searchbox">
-     	<?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { ?>
-															<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
+      	<?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { ?>
+																<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
 								<?php }else{
 															if ( class_exists( 'CustomGoogleSearch' ) ) {
 																// check for plugin using plugin name
 																// Plugin is activated
 																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
-																
+																	
 																		}else{
-																			$instance = array(
+																		$instance = array(
 																			'display_results' => '3',
 																		);                                               the_widget('CGS_Widget', $instance);
 																			}
@@ -95,13 +95,13 @@
   </div>
   <div id="mobile-search" class="show-for-small-only">
         <?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { ?>
-															<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
+																<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
 								<?php }else{
 															if ( class_exists( 'CustomGoogleSearch' ) ) {
 																// check for plugin using plugin name
 																// Plugin is activated
 																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
-															
+																			
 																		}else{
 																			$instance = array(
 																			'display_results' => '3',
