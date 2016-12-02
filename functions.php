@@ -173,7 +173,7 @@ function lorainccc_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-				register_sidebar( array(
+		register_sidebar( array(
 		'name'          => esc_html__( 'LCCC Announcements Sidebar', 'lorainccc' ),
 		'id'            => 'lccc-announcements-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'lorainccc' ),
@@ -279,6 +279,7 @@ class lc_top_bar_menu_walker extends Walker_Nav_Menu
 		$output .= "\n$indent<ul class=\"vertical menu\" data-submenu>\n";
 	}
 }
+
 
 //Optional fallback
 function lc_topbar_menu_fallback($args)
