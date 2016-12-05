@@ -53,7 +53,7 @@
 																// check for plugin using plugin name
 																// Plugin is activated
 																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
-
+																	
 																		}else{
 																		$instance = array(
 																			'display_results' => '3',
@@ -69,7 +69,7 @@
 <div class="medium-blue-bg show-for-medium">
     <div class="row">
       <div class="large-12 columns">
-        <nav class="menu-centered" role="navigation" aria-label="<?php _e( 'Main Menu', 'lorainccc' );?>">
+        <nav class="menu-centered">
 									<?php
           wp_nav_menu(array(
 											'container' => false,
@@ -101,7 +101,7 @@
 																// check for plugin using plugin name
 																// Plugin is activated
 																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
-
+																			
 																		}else{
 																			$instance = array(
 																			'display_results' => '3',
@@ -113,7 +113,7 @@
 								}		?>
   </div>
   <div id="responsive-menu" class="show-for-small-only">
-   <nav role="navigation" aria-label="<?php _e( 'Mobile Main Menu', 'lorainccc' );?>">
+			  <nav role="navigation" aria-label="<?php _e( 'Mobile Main Menu', 'lorainccc' );?>">
     <ul class="vertical menu" data-drilldown data-parent-link="true">
      <li><a href="/" alt="Link back to LCCC Home Page">Home</a></li>
 					<?php 	wp_nav_menu(array(
@@ -127,8 +127,8 @@
 													'walker' => new lc_drill_menu_walker(),
 												));
      ?>
-     <li>&nbsp;</li>
-     <?php
+     <li>&nbsp;</li> 
+     <?php      
             wp_nav_menu(array(
 													'container' => false,
 													'menu' => __( 'Drill Menu', 'textdomain' ),
@@ -142,6 +142,7 @@
 					?>
 
     </ul>
+			</nav>
   </div>
 
 		</div>
