@@ -42,6 +42,15 @@ function lorainccc_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+ /*
+  * Image Thumbnails
+  * for Homepage Widget areas
+  *
+  */
+
+ add_image_size( 'highlight_thumbnail', 270,180 );
+ add_image_size( 'spotlight_thumbnail', 317,347 );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'lorainccc' ),
@@ -49,6 +58,8 @@ function lorainccc_setup() {
 		'footer-quicklinks-nav' => esc_html__( 'Footer Quicklinks', 'lorainccc' ),
 		'footer-campus-location-nav' => esc_html__( 'Footer Campus Locations', 'lorainccc' ),
 		'mobile-primary' => esc_html__( 'Mobile Primary Menu', 'lorainccc' ),
+  'header-shortcuts' => esc_html__( 'Header Shortcuts Menu', 'lorainccc' ),
+  'mobile-header-shortcuts' => esc_html__( 'Mobile Header Shortcuts Menu', 'lorainccc' ),
 	) );
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -92,6 +103,15 @@ function lorainccc_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'lorainccc' ),
 		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'lorainccc' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+ 	register_sidebar( array(
+		'name'          => esc_html__( 'Homepage Slider', 'lorainccc' ),
+		'id'            => 'homepage-slider-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'lorainccc' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -153,9 +173,18 @@ function lorainccc_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-				register_sidebar( array(
+		register_sidebar( array(
 		'name'          => esc_html__( 'LCCC Announcements Sidebar', 'lorainccc' ),
 		'id'            => 'lccc-announcements-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'lorainccc' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+ 	register_sidebar( array(
+		'name'          => esc_html__( 'LCCC Search Sidebar', 'lorainccc' ),
+		'id'            => 'lccc-search-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'lorainccc' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -170,8 +199,8 @@ add_action( 'widgets_init', 'lorainccc_widgets_init' );
  */
 function add_google_fonts() {
 wp_enqueue_style( 'open-sans-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', false );
-wp_enqueue_style( 'raleway-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', false ); 	
-	
+wp_enqueue_style( 'raleway-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700', false );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
@@ -192,6 +221,9 @@ function lorainccc_foundation_scripts() {
 		wp_enqueue_script( 'foundation-whatinput', get_template_directory_uri() . '/foundation/js/vendor/what-input.js', array( 'jquery' ), '1', true);
 
 		wp_enqueue_script( 'foundation-init-js', get_template_directory_uri() . '/foundation.js', array( 'jquery' ), '1', true );
+
+  wp_enqueue_script( 'lc-campus-status-front', get_stylesheet_directory_uri() . '/js/lc-campus-status-front.js', array( 'jquery' ), '1', false );
+
 
 	wp_enqueue_script( 'lorainccc-function-script', get_stylesheet_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150330', true );
 
