@@ -151,6 +151,9 @@ get_header(); ?>
 								$springcat = 'spring-semester-'.$spring_start_year.'-'.$spring_end_year;
 								$summercat = 'summer-semester-'.$summer_start_year.'-'.$summer_end_year;
 								$fallcat = 'fall-semester-'.$fall_start_year.'-'.$fall_end_year;
+																echo 'spring: '.$springcat.'<br />';
+								echo 'summer: '.$summercat.'<br />';
+								echo 'fall: '.$fallcat.'<br />';
 							
 										$springeventargs=array(
             'post_type' => 'lccc_academicevent',
