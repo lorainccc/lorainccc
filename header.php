@@ -28,6 +28,10 @@
 </script>
 <style>
 /* Campus Status Styling */
+ 
+ [ng-class]{
+  display: none;
+ }
 
 .lc-active{
  display:block;
