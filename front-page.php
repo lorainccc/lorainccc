@@ -15,13 +15,13 @@ get_header();
 <div ng-app="app">
  <div ng-controller="lcStatusCtrl">
   <div class="row" ng-class="notify.active == '1' ? 'lc-active' : 'lc-inactive'">
-      <div class="show-for-large-up large-2 columns lc-status">
-      <img src="/wp-content/themes/lorainccc/images/campus-status-exclamation.png" border="0" />
+      <div class="show-for-medium large-2 columns lc-status">
+      <img src="/wp-content/themes/lorainccc/images/campus-status-{{notify.type}}.png" border="0" />
       </div>
       <div class="small-12 large-10 columns lc-status">
          <h3>{{notify.headline}}</h3>
        <p>{{notify.text}}</p>
-       <p><a href="{{notify.url}}" border="0" title="Learn more about LCCC Campus Status" target="_blank" class="lc-status-button">Learn More</a></p>
+       <p><a href="{{notify.url}}" border="0" title="Learn more about LCCC Campus Status" target="_blank" class="lc-status-button-{{notify.type}}">Learn More</a></p>
       </div>
    </div>
   </div>

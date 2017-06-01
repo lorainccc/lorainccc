@@ -53,7 +53,7 @@
   color: #c00000;
  }
  
-  .lc-status .lc-status-button {
+  .lc-status .lc-status-button-exclamation {
 	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
 	box-shadow:inset 0px 1px 0px 0px #f5978e;
@@ -77,7 +77,7 @@
 	border:1px solid #d02718;
 	display:inline-block;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:'Open Sans';
 	font-size:15px;
 	font-weight:bold;
 	font-style:normal;
@@ -87,15 +87,60 @@
 	text-shadow:1px 1px 0px #810e05;
  padding:0 15px;
 }
-  .lc-status .lc-status-button:hover {
+  .lc-status .lc-status-button-exclamation:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c00000), color-stop(1, #f24537) );
 	background:-moz-linear-gradient( center top, #c00000 5%, #f24537 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c00000', endColorstr='#f24537');
 	background-color:#c00000;
 }
-  .lc-status .lc-status-button:active {
+  .lc-status .lc-status-button-exclamation:active {
 	position:relative;
 	top:1px;
+ }
+ 
+ .lc-status-button-info {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #439ef2), color-stop(1, #0055a5) );
+	background:-moz-linear-gradient( center top, #439ef2 5%, #0055a5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#439ef2', endColorstr='#0055a5');
+	background-color:#439ef2;
+	-webkit-border-top-left-radius:8px;
+	-moz-border-radius-topleft:8px;
+	border-top-left-radius:8px;
+	-webkit-border-top-right-radius:8px;
+	-moz-border-radius-topright:8px;
+	border-top-right-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright:8px;
+	border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft:8px;
+	border-bottom-left-radius:8px;
+	text-indent:0;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:'Open Sans';
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	line-height:30px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #1570cd;
+ padding:0 15px;
+}
+.lc-status-button-info:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0055a5), color-stop(1, #439ef2) );
+	background:-moz-linear-gradient( center top, #0055a5 5%, #439ef2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0055a5', endColorstr='#439ef2');
+	background-color:#0055a5;
+}.lc-status-button-info:active {
+	position:relative;
+	top:1px;
+}
 </style>
 </head>
 <body <?php body_class(); ?>>
