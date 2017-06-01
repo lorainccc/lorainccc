@@ -43,7 +43,7 @@ get_header(); ?>
 				$summer_end_display = date("F d, Y",$summer_end_var); 
 				$summer_end_year = date("Y",$summer_end_var); 
 				if($summer_start_year == $summer_end_year){
-					$summer_start_year = $summer_start_year - 1; 
+					$summer_end_year = $summer_end_year + 1; 
 				}
 				?>
 				<?php $fall_start = get_option( 'lccc_fall_semester_startdate', '' ); 
@@ -148,11 +148,18 @@ get_header(); ?>
 																						<table>
 							<tbody>
 								<?php
+								$springcat = 'spring-semester-'.$spring_start_year.'-'.$spring_end_year;
+								$summercat = 'summer-semester-'.$summer_start_year.'-'.$summer_end_year;
+								$fallcat = 'fall-semester-'.$fall_start_year.'-'.$fall_end_year;
+																echo 'spring: '.$springcat.'<br />';
+								echo 'summer: '.$summercat.'<br />';
+								echo 'fall: '.$fallcat.'<br />';
+							
 										$springeventargs=array(
             'post_type' => 'lccc_academicevent',
 		    						'posts_per_page' => -1,
 		    						'order' => 'ASC',
-												'event_categories' => 'spring-semester-2016-2017',
+												'event_categories' => $springcat,
     		    		'orderby'=> 'meta_value',
     		    		'meta_key' => 'event_start_date',
           );
@@ -203,7 +210,7 @@ get_header(); ?>
             'post_type' => 'lccc_academicevent',
 		    						'posts_per_page' => -1,
 		    						'order'=> 'ASC',
-												'event_categories' => 'summer-semester-2016-2017',
+												'event_categories' => $summercat,
     		    		'orderby'=> 'meta_value',
     		    		'meta_key' => 'event_start_date',
           );
@@ -250,7 +257,7 @@ get_header(); ?>
             'post_type' => 'lccc_academicevent',
 		    						'posts_per_page' => -1,
 		    						'order' => 'ASC',
-												'event_categories' => 'fall-semester-2016-2017',
+												'event_categories' => $fallcat,
     		    		'orderby'=> 'meta_value',
     		    		'meta_key' => 'event_start_date',
           );

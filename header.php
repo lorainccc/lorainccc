@@ -33,6 +33,10 @@
   display: none;
  }
 
+ [ng-class]{
+  display: none;
+ }
+ 
 .lc-active{
  display:block;
 }
