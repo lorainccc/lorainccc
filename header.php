@@ -104,7 +104,7 @@
 	top:1px;
  }
  
- .lc-status-button-info {
+  .lc-status .lc-status-button-info {
 	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
 	box-shadow:inset 0px 1px 0px 0px #97c4fe;
@@ -138,15 +138,19 @@
 	text-shadow:1px 1px 0px #1570cd;
  padding:0 15px;
 }
-.lc-status-button-info:hover {
+ .lc-status .lc-status-button-info:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0055a5), color-stop(1, #439ef2) );
 	background:-moz-linear-gradient( center top, #0055a5 5%, #439ef2 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0055a5', endColorstr='#439ef2');
 	background-color:#0055a5;
-}.lc-status-button-info:active {
+} .lc-status .lc-status-button-info:active {
 	position:relative;
 	top:1px;
 }
+  .lc-status .lc-status-button-info a{
+  color:#fff;
+ } 
+ 
 </style>
 </head>
 <body <?php body_class(); ?>>
