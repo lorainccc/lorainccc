@@ -50,9 +50,15 @@
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
   font-weight: 700;
+ }
+ 
+ .lc-status h3.exclamation{
   color: #c00000;
  }
 
+ .lc-status h3.info{
+  color: #0055a5;
+ }
   .lc-status .lc-status-button-exclamation {
 	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
