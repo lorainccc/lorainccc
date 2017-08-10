@@ -46,17 +46,17 @@
   min-height: 155px;
  }
 
- .lc-status h3{
+ .lc-status span.headline{
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
   font-weight: 700;
  }
  
- .lc-status h3.exclamation{
+ .lc-status span.headline, .lc-status span.exclamation{
   color: #c00000;
  }
 
- .lc-status h3.info{
+ .lc-status span.headline, .lc-status span.info{
   color: #0055a5;
  }
   .lc-status .lc-status-button-exclamation {
