@@ -39,7 +39,7 @@ get_header();
 			</div>
   </div>
   <?php } ?>
-  <section class="cta-icons">
+  <section class="cta-icons" aria-label="Popular links for students and parents">
     <div class="row icon-container">
 					<?php if ( is_active_sidebar( 'cta-icons-sidebar' ) ) { ?>
 								<ul id="sidebar" style="position: relative;">
@@ -48,7 +48,7 @@ get_header();
 					<?php } ?>
     </div>
   </section>
-  <section class="row homepage">
+  <section class="row homepage" aria-label="LCCC marketing statement">
    <h1 class="homepage"><?php
     $bloginfo = get_bloginfo('description');
     $bloginfo = str_replace('Education', '<span style="font-weight:700;">Education</span>', $bloginfo);
@@ -57,7 +57,7 @@ get_header();
     echo $bloginfo;
     ?></h1>
   </section>
-  <section class="row">
+  <section class="row" aria-label="For our community">
    	<?php if ( is_active_sidebar( 'lccc-spotlights-sidebar' ) ) { ?>
 						<?php dynamic_sidebar( 'lccc-spotlights-sidebar' ); ?>
 				<?php } ?>
