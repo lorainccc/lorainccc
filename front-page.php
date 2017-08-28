@@ -39,8 +39,8 @@ get_header();
 			</div>
   </div>
   <?php } ?>
-  <section class="cta-icons" aria-label="Popular links for students and parents">
-    <div class="row icon-container">
+  <section class="cta-icons" aria-label="Popular links for students and parents" aria-labeledby="lc-dashboard">
+    <div id="lc-dashboard" class="row icon-container">
 					<?php if ( is_active_sidebar( 'cta-icons-sidebar' ) ) { ?>
 								<ul id="sidebar" style="position: relative;">
 											<?php dynamic_sidebar( 'cta-icons-sidebar' ); ?>
@@ -48,8 +48,8 @@ get_header();
 					<?php } ?>
     </div>
   </section>
-  <section class="row homepage" aria-label="LCCC marketing statement">
-   <h1 class="homepage"><?php
+  <section class="row homepage" aria-label="LCCC marketing statement" aria-labeledby="lc-marketing-statement">
+   <h1 id="lc-marketing-statement" class="homepage"><?php
     $bloginfo = get_bloginfo('description');
     $bloginfo = str_replace('Education', '<span style="font-weight:700;">Education</span>', $bloginfo);
     $bloginfo = str_replace('Jobs', '<span style="font-weight:700;">Jobs</span>', $bloginfo);
@@ -73,7 +73,7 @@ get_header();
   <div class="column row">
     <hr />
   </div>
-  <section class="row news-feed" id="home-news">
+  <section class="row news-feed" id="home-news" aria-labledby="lccc_announcement_feed_widget-2 lccc_feed_widget-2">
     <div class="large-8 medium-8 columns home-left">
 <?php if ( is_active_sidebar( 'lccc-announcements-sidebar' ) ) { ?>
 						<?php dynamic_sidebar( 'lccc-announcements-sidebar' ); ?>
