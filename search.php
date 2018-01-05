@@ -13,8 +13,12 @@ get_header();
 
  while ( have_posts() ) : the_post();
 
-	 get_template_part( 'template-parts/content', 'search' );
-
+		switch_to_blog($post->blog_id);
+	 
+		get_template_part( 'template-parts/content', 'search' );
+  
+		restore_current_blog();
+		
  endwhile; // end of the loop.
 ?>
 	</div>
