@@ -22,6 +22,7 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
+		<hr />
 	</div><!-- .entry-summary -->
-<hr/>
+
 </article><!-- #post-## -->
