@@ -4,6 +4,11 @@ get_header();
 ?>
 <div class="row">
 	<div class="small-12 columns">
+		<h1>You searched for:</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="small-12 columns">
 <?php	
 
  while ( have_posts() ) : the_post();
