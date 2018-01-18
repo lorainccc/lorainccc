@@ -349,4 +349,18 @@ function jptweak_remove_share() {
  
 add_action( 'loop_start', 'jptweak_remove_share' );
 
+/**
+ * Search across all network sites with Elasticpress
+ *
+ * @param $scope string Search scope
+ *
+ * @return string
+ */
+
+function lc_ep_search_scope( $scope ){
+	return 'all';
+}
+
+add_filter( 'ep_search_scope', 'lc_ep_search_scope' );
+
 ?>
