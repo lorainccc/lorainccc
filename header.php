@@ -232,9 +232,11 @@
   </div>
   <div id="mobile-search" class="show-for-small-only">
         <?php 
-										the_widget('WP_Widget_Search');
+										//the_widget('WP_Widget_Search');
 								?>
   </div>
+		<?php //The div below breaks a float that is happening, which without the tag causes the menu to squash into the remaining space. ?>
+		<div style="clear:both;"></div>
   <div id="responsive-menu" class="show-for-small-only">
 			  <nav role="navigation" aria-label="<?php _e( 'Mobile Main Menu', 'lorainccc' );?>" aria-describedby="mobile-primary-menu mobile-header-shortcuts">
     <ul class="vertical menu" data-drilldown data-parent-link="true">
