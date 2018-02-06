@@ -230,9 +230,9 @@
       <button class="menu-icon" type="button" data-toggle></button>
       </span> </div>
   </div>
-  <div id="mobile-search" class="show-for-small-only">
+  <div id="mobile-search" class="show-for-small-only hide-for-print">
         <?php 
-										//the_widget('WP_Widget_Search');
+										the_widget('WP_Widget_Search');
 								?>
   </div>
 		<?php //The div below breaks a float that is happening, which without the tag causes the menu to squash into the remaining space. ?>
