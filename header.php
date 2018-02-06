@@ -231,9 +231,9 @@
       </span> </div>
   </div>
   <div id="mobile-search" class="show-for-small-only">
-        <?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { 
-																dynamic_sidebar( 'lccc-search-sidebar' ); 
-								}		?>
+        <?php 
+										the_widget('WP_Widget_Search');
+								?>
   </div>
   <div id="responsive-menu" class="show-for-small-only">
 			  <nav role="navigation" aria-label="<?php _e( 'Mobile Main Menu', 'lorainccc' );?>" aria-describedby="mobile-primary-menu mobile-header-shortcuts">
