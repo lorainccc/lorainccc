@@ -245,23 +245,7 @@
       </span> </div>
   </div>
   <div id="mobile-search" class="show-for-small-only">
-        <?php if ( is_active_sidebar( 'lccc-search-sidebar' ) ) { ?>
-																<?php dynamic_sidebar( 'lccc-search-sidebar' ); ?>
-								<?php }else{
-															if ( class_exists( 'CustomGoogleSearch' ) ) {
-																// check for plugin using plugin name
-																// Plugin is activated
-																		if ( is_active_sidebar( 'lccc-four-o-four-sidebar' ) ) {
 
-																		}else{
-																			$instance = array(
-																			'display_results' => '3',
-																		);                                               the_widget('CGS_Widget', $instance);
-																			}
-															}else{
-																echo 'no widgets found';
-															}
-								}		?>
   </div>
   <div id="responsive-menu" class="show-for-small-only">
 			  <nav role="navigation" aria-label="<?php _e( 'Mobile Main Menu', 'lorainccc' );?>" aria-describedby="mobile-primary-menu mobile-header-shortcuts">
