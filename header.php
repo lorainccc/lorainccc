@@ -74,6 +74,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 .lc-active{
  display:block;
+ margin: 0 0 4px 0;
  border-bottom: 2px #0055a5 solid;
 }
 
