@@ -25,8 +25,9 @@ get_header();
       </div>
    </div>
   </div>
+  <div style="height:4px; width=100%">&nbsp;</div>
 </div>
-<div style="height:4px; width=100%">&nbsp;</div>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
   <?php if ( is_active_sidebar( 'homepage-slider-sidebar' ) ) { ?>
