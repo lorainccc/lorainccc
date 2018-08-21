@@ -83,6 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  .lc-status{
   margin: 10px 0;
   min-height: 155px;
+  border-bottom: 2px #0055a5 solid;	
  }
 
  .lc-status span.headline{
