@@ -24,7 +24,7 @@ get_header();
        <p><a href="{{notify.url}}" border="0" title="Learn more about LCCC Campus Status" target="_blank" class="lc-status-button-{{notify.type}}">Learn More</a></p>
       </div>
 				 <!-- Spacer allows for bottom border to be seen -->
-			  <div style="height:4px; width=100%; border-bottom: 2px #0055a5 solid; display:inline-block;">&nbsp;</div>
+			  <div style="height:4px; width:100%; border-bottom: 2px #0055a5 solid; display:inline-block;">&nbsp;</div>
    </div>
   </div>
 </div>
