@@ -9,7 +9,12 @@ get_header();
 </div>
 <div class="row">
 	<div class="small-12 columns">
-		<?php $count = $wp_query->post_count(); ?>
+		<?php 
+		
+		global $wp_query;
+		$count = $wp_query->post_count; 
+		
+		?>
 		<h2>Results returned: <?php echo $count; ?></h2>
 <?php	
 
