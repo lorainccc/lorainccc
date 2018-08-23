@@ -21,6 +21,9 @@ get_header();
 		
  endwhile; // end of the loop.
 ?>
+		<div style="float:left;"><?php previous_posts_link( '&laquo; Previous Results' ) ?></div>
+		<div style="float:right;"><?php next_posts_link( '&raquo; More Results' ) ?></div>
+		<div style="clear:both;"></div>
 	</div>
 </div>
 	<?php

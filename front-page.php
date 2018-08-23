@@ -23,13 +23,13 @@ get_header();
        <p>{{notify.text}}</p>
        <p><a href="{{notify.url}}" border="0" title="Learn more about LCCC Campus Status" target="_blank" class="lc-status-button-{{notify.type}}">Learn More</a></p>
       </div>
-				 <!-- Spacer allows for bottom border to be seen -->
-			  <div style="height:4px; width:100%; border-bottom: 2px #0055a5 solid; display:inline-block;">&nbsp;</div>
+				 <!-- Spacer -->
+			  <div style="height:4px; width:100%; display:inline-block;">&nbsp;</div>
    </div>
   </div>
 </div>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area" style="border-top: 2px #0055a5 solid;">
 		<main id="main" class="site-main" role="main">
   <?php if ( is_active_sidebar( 'homepage-slider-sidebar' ) ) { ?>
 
