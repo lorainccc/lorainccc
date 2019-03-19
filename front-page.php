@@ -50,7 +50,7 @@ get_header();
 					<?php } ?>
     </div>
   </section>
-  <section class="row homepage" aria-label="LCCC marketing statement" aria-labeledby="lc-marketing-statement">
+  <section class="row homepage" aria-label="LCCC marketing statement" aria-labelledby="lc-marketing-statement">
    <h1 id="lc-marketing-statement" class="homepage"><?php
     $bloginfo = get_bloginfo('description');
     $bloginfo = str_replace('Education', '<span style="font-weight:700;">Education</span>', $bloginfo);
@@ -75,7 +75,7 @@ get_header();
   <div class="column row">
     <hr />
   </div>
-  <section class="row news-feed" id="home-news" aria-labledby="lccc_announcement_feed_widget-2 lccc_feed_widget-2">
+  <section class="row news-feed" id="home-news" aria-labelledby="lccc_announcement_feed_widget-2 lccc_feed_widget-2">
     <div class="large-8 medium-8 columns home-left">
 <?php if ( is_active_sidebar( 'lccc-announcements-sidebar' ) ) { ?>
 						<?php dynamic_sidebar( 'lccc-announcements-sidebar' ); ?>
