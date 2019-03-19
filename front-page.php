@@ -19,17 +19,16 @@ get_header();
       <img src="/wp-content/themes/lorainccc/images/campus-status-{{notify.type}}.png" alt="{{notify.headline}}" border="0" />
       </div>
       <div class="small-12 large-10 columns lc-status">
-         <span class="headline {{notify.type}}">{{notify.headline}}</span>
+       <span class="headline {{notify.type}}">{{notify.headline}}</span>
        <p>{{notify.text}}</p>
        <p><a href="{{notify.url}}" border="0" title="Learn more about LCCC Campus Status" target="_blank" class="lc-status-button-{{notify.type}}">Learn More</a></p>
       </div>
-				 <!-- Spacer -->
+      				 <!-- Spacer -->
 			  <div style="height:4px; width:100%; display:inline-block;">&nbsp;</div>
    </div>
   </div>
 </div>
-
-	<div id="primary" class="content-area" style="border-top: 2px #0055a5 solid;">
+    <div id="primary" class="content-area" style="border-top: 2px #0055a5 solid;">
 		<main id="main" class="site-main" role="main">
   <?php if ( is_active_sidebar( 'homepage-slider-sidebar' ) ) { ?>
 
@@ -42,7 +41,7 @@ get_header();
 			</div>
   </div>
   <?php } ?>
-  <section class="cta-icons" aria-label="Popular links for students and parents" aria-labeledby="lc-dashboard">
+  <section class="cta-icons" aria-label="Popular links for students and parents" role="region" aria-labelledby="lc-dashboard">
     <div id="lc-dashboard" class="row icon-container">
 					<?php if ( is_active_sidebar( 'cta-icons-sidebar' ) ) { ?>
 								<ul id="sidebar" style="position: relative;">
