@@ -44,9 +44,9 @@ get_header();
   <section class="cta-icons" aria-label="Popular links for students and parents" role="region" aria-labelledby="lc-dashboard">
     <div id="lc-dashboard" class="row icon-container">
 					<?php if ( is_active_sidebar( 'cta-icons-sidebar' ) ) { ?>
-								<ul id="sidebar" style="position: relative;">
+								
 											<?php dynamic_sidebar( 'cta-icons-sidebar' ); ?>
-								</ul>
+							
 					<?php } ?>
     </div>
   </section>
