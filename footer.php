@@ -46,7 +46,7 @@
     <div class="large-3 medium-3 columns">
       <h2>Campus Locations</h2>
   <?php if ( has_nav_menu( 'footer-campus-location-nav' ) ) : ?>
-		<nav id="site-navigation" class="footer-navigation" role="navigation">
+		<nav id="campus-locations" class="footer-navigation" role="navigation">
 			<?php
 				// Primary Footer navigation menu.
 				wp_nav_menu( array(
