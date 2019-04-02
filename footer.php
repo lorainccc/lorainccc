@@ -46,7 +46,7 @@
     <div class="large-3 medium-3 columns">
       <h2>Campus Locations</h2>
   <?php if ( has_nav_menu( 'footer-campus-location-nav' ) ) : ?>
-		<nav id="campus-locations" class="footer-navigation" role="navigation">
+		<nav id="campus-locations" class="footer-navigation" role="navigation" aria-labelledby="menu-footer-campus-locations">
 			<?php
 				// Primary Footer navigation menu.
 				wp_nav_menu( array(
@@ -60,7 +60,7 @@
     <div class="large-3 medium-3 columns">
       <h2>Quick Links</h2>
 	<?php if ( has_nav_menu( 'footer-quicklinks-nav' ) ) : ?>
-		<nav id="site-navigation" class="footer-navigation" role="navigation">
+		<nav id="site-navigation" class="footer-navigation" role="navigation" aria-labelledby="menu-footer-quicklinks">
 			<?php
 				// Primary Footer navigation menu.
 				wp_nav_menu( array(
