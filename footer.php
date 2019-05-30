@@ -16,7 +16,7 @@
       <ul role="presentation" class="menu footer-sm-links">
         <li><a href="http://facebook.com/lorainccc" title="" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/facebook_white.svg" height="30" width="30" alt="Follow LCCC on Facebook" /></a></li>
         <li><a href="http://twitter.com/lorainccc" title="" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/twitter_white.svg" height="30" width="30" alt="Follow LCCC on Twitter" /></a></li>
-        <li><a href="http://www.linkedin.com/company/lorain-county-community-college" title="" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/linkedin_white.svg" height="30" width="30" alt="" /></a></li>
+        <li><a href="http://www.linkedin.com/company/lorain-county-community-college" title="" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/linkedin_white.svg" height="30" width="30" alt="Follow LCCC on LinkedIn" /></a></li>
         <!--<li><a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/pinterest_white.svg" height="30" width="30" alt="" /></a></li>-->
         <li><a href="http://www.instagram.com/lorainccc" title="" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/instagram_white.svg" height="30" width="30" alt="Follow LCCC on Instagram" /></a></li>
       </ul>
