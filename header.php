@@ -155,9 +155,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<header id="masthead" class="site-header" role="banner">
 	<div class="row show-for-small-only mobile-nav-bar">
     <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="LCCC Home" width="165" height="31.875" /></a> </div>
-    <div class="small-2 columns clearfix"> <button data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Toggle LCCC Website Search" class="float-right" data-toggle/></button> </div>
+    <div class="small-2 columns clearfix"> <button data-responsive-toggle="mobile-search" data-hide-for="medium" id="searchToggle" aria-controls="searcnform"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Toggle LCCC Website Search" class="float-right" data-toggle/></button> </div>
     <div class="small-2 columns"> <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle="" aria-expanded="true" aria-controls="resonsive-menu-nav" id="responsive-menu-button">Toggle Main Menu</button>
+      <button class="menu-icon" type="button" data-toggle="" aria-expanded="false" aria-controls="resonsive-menu-nav" id="responsive-menu-button">Toggle Main Menu</button>
       </span> </div>
   </div>
 		<div class="row">
@@ -186,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 <!-- <div class="medium-blue-bg show-for-medium"> -->
 <div id="responsive-menu" class="medium-blue-bg">
-			<nav class="menu-centered" role="navigation" aria-label="Main Menu">
+			<nav class="menu-centered" aria-label="main">
 								<?php
 				wp_nav_menu(array(
 										'container' => false,
