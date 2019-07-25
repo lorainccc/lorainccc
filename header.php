@@ -144,24 +144,29 @@
 </head>
 <body <?php body_class(); ?>>
 
-<!-- Google Tag Manager (noscript) -->
+<!-- LCCC Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWJL5TQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- End LCCC Google Tag Manager (noscript) -->
+
+<!-- Advance Ohio Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7W5SBC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Advance Ohio Google Tag Manager (noscript) -->
 
 <div id="page" class="hfeed site">
 	<a class="show-on-focus hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 	<div class="row show-for-small-only mobile-nav-bar">
-    <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="LCCC Home" width="165" height="31.875" /></a> </div>
-    <div class="small-2 columns clearfix"> <button data-responsive-toggle="mobile-search" data-hide-for="medium" aria-expanded="true" id="searchToggle" aria-controls="searcnform"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Toggle LCCC Website Search" class="float-right" data-toggle/></button> </div>
+    <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="LCCC Logo" width="165" height="31.875" /></a> </div>
+    <div class="small-2 columns clearfix"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Search the LCCC Website" class="float-right" data-toggle/></span> </div>
     <div class="small-2 columns"> <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle="" aria-expanded="true" aria-controls="resonsive-menu-nav" id="responsive-menu-button">Toggle Main Menu</button>
+      <button class="menu-icon" type="button" data-toggle></button>
       </span> </div>
   </div>
 		<div class="row">
-    <div class="hide-for-small-only large-6 medium-6 columns"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/LCCC-Logo.png" height="70" width="325" alt="Lorain County Community College Home" /></a>  </div>
+    <div class="hide-for-small-only large-6 medium-6 columns"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/LCCC-Logo.png" height="70" width="325" alt="Lorain County Community College Logo" /></a>  </div>
     <div id="responsive-shortcuts" class="hide-for-small large-6 medium-6 columns">
 			<div class="row">
 				<div class="hide-for-small-only medium-12 columns">
@@ -186,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 <!-- <div class="medium-blue-bg show-for-medium"> -->
 <div id="responsive-menu" class="medium-blue-bg">
-			<nav class="menu-centered" aria-label="main">
+			<nav class="menu-centered" role="navigation" aria-label="Main Menu">
 								<?php
 				wp_nav_menu(array(
 										'container' => false,
