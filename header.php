@@ -139,20 +139,17 @@
   .lc-status .lc-status-button-info a, .lc-status .lc-status-button-info-alt a{
   color:#fff;
  } 
- 
+ .lc-notify-image{
+	border: 0;
+ }
 </style>
 </head>
 <body <?php body_class(); ?>>
 
-<!-- LCCC Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWJL5TQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End LCCC Google Tag Manager (noscript) -->
-
-<!-- Advance Ohio Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7W5SBC"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Advance Ohio Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
 
 <div id="page" class="hfeed site">
 	<a class="show-on-focus hide-for-print" href="#content"><?php esc_html_e( 'Skip to content', 'lccc-framework' ); ?></a>
@@ -160,7 +157,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<header id="masthead" class="site-header" role="banner">
 	<div class="row show-for-small-only mobile-nav-bar">
     <div class="small-8 columns"> <a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/lccclogo_white.svg" alt="LCCC Logo" width="165" height="31.875" /></a> </div>
-    <div class="small-2 columns clearfix" role="button" tabindex="0"> <span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Search the LCCC Website" class="float-right" data-toggle/></span> </div>
+    <div class="small-2 columns clearfix" role="button"><span data-responsive-toggle="mobile-search" data-hide-for="medium"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/magnifying-glass.svg" height="25" width="25" alt="Search the LCCC Website" class="float-right" data-toggle/></span> </div>
     <div class="small-2 columns"> <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
       </span> </div>
