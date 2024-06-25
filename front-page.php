@@ -12,22 +12,7 @@
  */
 get_header();
 ?>
-<div ng-app="app">
- <div ng-controller="lcStatusCtrl">
-  <div class="row" ng-class="notify.active == '1' ? 'lc-active' : 'lc-inactive'">
-      <div class="show-for-medium large-2 columns lc-status">
-      <img src="/wp-content/themes/lorainccc/images/campus-status-{{notify.type}}.png" alt="{{notify.headline}}" class="lc-notify-image" />
-      </div>
-      <div class="small-12 large-10 columns lc-status">
-       <span class="headline {{notify.type}}">{{notify.headline}}</span>
-       <p>{{notify.text}}</p>
-       <p><a href="{{notify.url}}" title="Learn more about LCCC Campus Status" target="_blank" class="lc-status-button-{{notify.type}}">Learn More</a></p>
-      </div>
-      				 <!-- Spacer -->
-			  <div style="height:4px; width:100%; display:inline-block;">&nbsp;</div>
-   </div>
-  </div>
-</div>
+
     <div id="primary" class="content-area" style="border-top: 2px #0055a5 solid;">
 		<main id="main" class="site-main" role="main">
   <?php if ( is_active_sidebar( 'homepage-slider-sidebar' ) ) { ?>
@@ -50,12 +35,11 @@ get_header();
 					<?php } ?>
     </div>
   </section>
-  <section class="row homepage" aria-label="LCCC marketing statement" aria-labelledby="lc-marketing-statement">
+  <section class="row homepage" aria-label="LCCC Marketing Statement" aria-labelledby="lc-marketing-statement">
    <h1 id="lc-marketing-statement" class="homepage"><?php
     $bloginfo = get_bloginfo('description');
-    $bloginfo = str_replace('Education', '<span style="font-weight:700;">Education</span>', $bloginfo);
-    $bloginfo = str_replace('Jobs', '<span style="font-weight:700;">Jobs</span>', $bloginfo);
-    $bloginfo = str_replace('Future', '<span style="font-weight:700;">Future</span>', $bloginfo);
+    $bloginfo = str_replace('Story', '<span style="font-weight:700;">Story</span>', $bloginfo);
+    $bloginfo = str_replace('Here', '<span style="font-weight:700;">Here</span>.', $bloginfo);
     echo $bloginfo;
     ?></h1>
   </section>
