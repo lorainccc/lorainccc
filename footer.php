@@ -20,10 +20,7 @@
         <!--<li><a href="#" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/pinterest_white.svg" height="30" width="30" alt="" /></a></li>-->
         <li><a href="http://www.instagram.com/lorainccc" title="" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/instagram_white.svg" height="30" width="30" alt="Follow LCCC on Instagram" /></a></li>
       </ul>
-      <a href="/campus-technology/lccc-mobile/" title="" target="_blank" class="clearfix mobile-app-link"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/icons/smartphone_yellow.svg" heigth="33" width="20" alt=""/>
-      <p>LCCC'S Mobile App<p>
-      </a>
-     <?php if($_GET['siteurl'] == ''){ ?>
+     <?php if( !isset($_GET['siteurl'])){ ?>
      <p class="website-feedback">
       <a href="/website-feedback?siteurl=<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" title="" target="_blank">Feedback about this page</a>
      </p>
@@ -39,7 +36,7 @@
       <ul role="presentation" class="underline"> 
         <li><a href="/about/map-and-directions-to-lccc/" title="">Map and Directions</a></li>
         <li><a href="/about/contact-lorain-county-community-college/" title="">Contact LCCC</a></li>
-        <li><a href="/getting-started/campus-visitation-days/" title="">Visit LCCC</a></li>
+        <li><a href="/getting-started/visit-lccc/" title="">Visit LCCC</a></li>
       </ul>
     </div>
     <div class="large-3 medium-3 columns">
@@ -75,6 +72,22 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<?php
+  switch($_SERVER['SERVER_ADDR']){
+    case "172.25.1.181":
+      echo "<!-- Prod 1a | 22.04-->";
+    break;
+
+    case "172.25.7.181":
+      echo "<!-- Prod 1b | 22.04-->";
+    break;
+
+    default:
+      echo $_SERVER['SERVER_ADDR'];
+    break;
+  }
+?>
 
 </body>
 </html>
