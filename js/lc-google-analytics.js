@@ -3,14 +3,10 @@
  *
 	*/
 
-/** Google Analytics **/
+/**  Google tag (gtag.js) */
 
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-	ga('create', 'UA-7542329-2', 'auto', {'allowLinker': true});
-	ga('require', 'linker');
-	ga('linker:autoLink', ['sites.lorainccc.edu'] );
-	ga('send', 'pageview');
+  gtag('config', 'G-Z27HB3ECDG');
