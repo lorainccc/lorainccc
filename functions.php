@@ -253,7 +253,6 @@ function lorainccc_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'lorainccc_scripts' );
 
-
 /**
 * Add async or defer attributes to script enqueues
 * @author Mike Kormendy

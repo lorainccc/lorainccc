@@ -89,5 +89,18 @@
   }
 ?>
 
+<script type="text/javascript">
+
+// Adding titles to the control button
+
+jQuery(document).ready(function( $ ){
+
+$('a.soliloquy-stop').attr( "title", "Stop Slideshow" );
+$('a.soliloquy-start').attr( "title", "Start Slideshow" );
+
+}); 
+
+</script>
+
 </body>
 </html>
