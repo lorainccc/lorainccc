@@ -11,7 +11,6 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
 	
@@ -143,6 +142,17 @@
 	border: 0;
  }
 </style>
+<script src="https://js.ipredictive.com/viant_universal_pixel.js" type="text/javascript"></script>
+<script type="text/javascript">
+    new ViantUniversalPixel(115292, 'https://ad.ipredictive.com/d/track/event',
+    {
+  "ps": "0"
+}).fire();
+</script>
+<noscript>
+    <img src="https://ad.ipredictive.com/d/track/event?upid=115292&url=[url]&cache_buster=[timestamp]&ps=1" height="1" width="1" style="display:none" />
+</noscript>
+
 </head>
 <body <?php body_class(); ?>>
 
@@ -209,9 +219,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div id="content" tabindex="0" class="site-content">
 	<div ng-app="app">
  <div ng-controller="lcStatusCtrl">
-  <div class="row" ng-class="notify.active == '1' ? 'lc-active' : 'lc-inactive'">
+  <div ng-if="notify.active == '1'" class="row" ng-class="notify.active == '1' ? 'lc-active' : 'lc-inactive'">
       <div class="show-for-medium large-2 columns lc-status">
-      <img src="/wp-content/themes/lorainccc/images/campus-status-{{notify.type}}.png" alt="{{notify.headline}}" class="lc-notify-image" />
+      <img ng-src="/wp-content/themes/lorainccc/images/campus-status-{{notify.type}}.png" alt="{{notify.headline}}" class="lc-notify-image" />
       </div>
       <div class="small-12 large-10 columns lc-status">
        <span class="headline {{notify.type}}">{{notify.headline}}</span>
